@@ -1,0 +1,44 @@
+{
+  "id": "3e7ba5bf-4733-480c-9697-0729d621ecd0",
+  "name": "opening.hours",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "da26f7e2-945b-4636-9fac-02bf7c261222",
+          "required": false,
+          "dataType": "@sys.date-time",
+          "name": "date-time",
+          "value": "$date-time",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "We\u0027re open from 10 am to 9 pm every day. Can I help you place an order?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

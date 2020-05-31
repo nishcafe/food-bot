@@ -1,0 +1,68 @@
+{
+  "id": "c8831109-c176-4b09-923c-5b245528728b",
+  "name": "order.drink",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "cf540306-d2f4-4641-8717-6715dff77759",
+          "required": false,
+          "dataType": "@drink_composite",
+          "name": "drink_composite",
+          "value": "$drink_composite",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "e9499430-2864-48df-8217-4d1ed177ead8",
+          "required": false,
+          "dataType": "@size",
+          "name": "size",
+          "value": "$size",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "ea976987-5651-4b53-8bcb-534e51e1d06d",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Great, I\u0027ve added your drink order."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

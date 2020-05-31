@@ -1,0 +1,110 @@
+{
+  "id": "09c114ea-9bd8-47e2-9dba-35693377df04",
+  "name": "order.pizza",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "orderpizza-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "9dca335a-c7ff-40fa-9ec6-90191f5609b4",
+          "required": true,
+          "dataType": "@size",
+          "name": "size",
+          "value": "$size",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What size pizza do you want?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "dacf69d7-3baf-4195-b417-5f1d84e5566f",
+          "required": true,
+          "dataType": "@pizza_topping",
+          "name": "pizza_topping",
+          "value": "$pizza_topping",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What toppings do you want on your pizza?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "ee117c51-8751-4318-bdb2-0f5e064dee95",
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What time do you want to pick up the order?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "ff899c01-6511-430e-a737-f088db6042fb",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What day do you want to pick up your order?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Sure! We\u0027ve created your order for a $size pizza with $pizza_topping for pickup on $date.original at $time.original. Would you like a drink with that?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
